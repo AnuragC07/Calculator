@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(102, 133, 102);
+}
+
+.container {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: rgb(46, 43, 43);
+    box-shadow: 5px 5px 25px 2px rgb(40, 48, 38);
+}
+
+.display {
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 25px;
+    background: rgb(61, 71, 61);
+    /* box-shadow: 1px 1px 32px 18px rgba(93,93,93,0.55) inset;
+-webkit-box-shadow: 1px 1px 32px 18px rgb(53, 52, 52) inset;
+-moz-box-shadow: 1px 1px 32px 18px rgba(74, 74, 74, 0.55) inset; */
+    color: rgb(167, 190, 83);  
+    pointer-events: none;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.buttons button {
+    padding: 10px;
+    border-radius: 66px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(125, 125, 125);
+    box-shadow: 0 2px 10px 5px rgb(39, 38, 38);
+}
+.buttons button:active {
+    transform: scale(0.99);
+}
+.operator {
+    color: rgb(120, 193, 61);
+}
+.buttons .operator {
+    background: rgb(56, 68, 56);
+}
+.buttons .spcl-btn {
+    background: rgba(104, 107, 71, 0.808);
+    color: rgb(177, 191, 143);
+}
